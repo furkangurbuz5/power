@@ -1,47 +1,49 @@
-[
-  {
-    "id": 1,
-    "title": "Workout at City Gym West",
-    "startedOn": "2024-11-01T14:00:00",
-    "completedOn": "2024-11-01T15:30:00",
-    "workoutsDone": 8,
-    "location": "City Gym West",
-    "mainExercise": "BENCH_PRESS"
-  },
-  {
-    "id": 2,
-    "title": "Evening Training at Fitness 24/7",
-    "startedOn": "2024-11-02T18:00:00",
-    "completedOn": "2024-11-02T19:45:00",
-    "workoutsDone": 12,
-    "location": "Fitness 24/7",
-    "mainExercise": "DEADLIFT"
-  },
-  {
-    "id": 3,
-    "title": "Morning Strength at Downtown Fit",
-    "startedOn": "2024-11-03T08:30:00",
-    "completedOn": "2024-11-03T10:00:00",
-    "workoutsDone": 9,
-    "location": "Downtown Fit",
-    "mainExercise": "OVERHEAD_PRESS"
-  },
-  {
-    "id": 4,
-    "title": "HIIT Workout at SportCity Central",
-    "startedOn": "2024-11-04T07:00:00",
-    "completedOn": "2024-11-04T08:00:00",
-    "workoutsDone": 15,
-    "location": "SportCity Central",
-    "mainExercise": "BURPEES"
-  },
-  {
-    "id": 5,
-    "title": "Workout at SportCity Houtrust",
-    "startedOn": "2024-11-10T16:30:00",
-    "completedOn": "2024-11-10T18:30:00",
-    "workoutsDone": 10,
-    "location": "SportCity Capelle a/d IJssel",
-    "mainExercise": "BARBELL_SQUAT"
-  }
-]
+{
+        "workouts": [
+                {
+                        "id": 1,
+                        "title": "Workout at City Gym West",
+                        "startedOn": "2024-11-01T14:00:00",
+                        "completedOn": "2024-11-01T15:30:00",
+                        "workoutsDone": 8,
+                        "location": "City Gym West",
+                        "mainExercise": "BENCH_PRESS"
+                },
+                {
+                        "id": 2,
+                        "title": "Evening Training at Fitness 24/7",
+                        "startedOn": "2024-11-02T18:00:00",
+                        "completedOn": "2024-11-02T19:45:00",
+                        "workoutsDone": 12,
+                        "location": "Fitness 24/7",
+                        "mainExercise": "DEADLIFT"
+                },
+                {
+                        "id": 3,
+                        "title": "Morning Strength at Downtown Fit",
+                        "startedOn": "2024-11-03T08:30:00",
+                        "completedOn": "2024-11-03T10:00:00",
+                        "workoutsDone": 9,
+                        "location": "Downtown Fit",
+                        "mainExercise": "OVERHEAD_PRESS"
+                },
+                {
+                        "id": 4,
+                        "title": "HIIT Workout at SportCity Central",
+                        "startedOn": "2024-11-04T07:00:00",
+                        "completedOn": "2024-11-04T08:00:00",
+                        "workoutsDone": 15,
+                        "location": "SportCity Central",
+                        "mainExercise": "BURPEES"
+                },
+                {
+                        "id": 5,
+                        "title": "Workout at SportCity Houtrust",
+                        "startedOn": "2024-11-10T16:30:00",
+                        "completedOn": "2024-11-10T18:30:00",
+                        "workoutsDone": 10,
+                        "location": "SportCity Capelle a/d IJssel",
+                        "mainExercise": "BARBELL_SQUAT"
+                }
+        ]
+}
