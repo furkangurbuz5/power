@@ -26,6 +26,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-jdbc") //added jdbc
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose") //added docker compose
 	runtimeOnly("org.postgresql:postgresql") //added postgresql
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc") // added spring data
 }
 
 tasks.withType<Test> {

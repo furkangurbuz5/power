@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS Workout(
     completed_on timestamp NOT NULL,
     workouts_done INT NOT NULL,
     location varchar(255) NOT NULL,
-    mainExercise varchar(255) NOT NULL,
+    main_exercise varchar(255) NOT NULL,
+    version INT,
     PRIMARY KEY (id)
 );

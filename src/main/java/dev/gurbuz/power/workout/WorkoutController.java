@@ -3,9 +3,7 @@ package dev.gurbuz.power.workout;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,18 +24,6 @@ public class WorkoutController {
                 return wr.findAll();
         }
 
-        @GetMapping("/count")
-        int count()
-        {
-                return wr.count();
-        }
-
-        @GetMapping("/location/{location}")
-        List<Workout> findByLocation(@PathVariable String location)
-        {
-                return wr.findByLocation(location);
-        }
-
         @GetMapping("/{id}")
         Workout findById(@PathVariable Integer id)
         {
@@ -53,7 +39,7 @@ public class WorkoutController {
         @PostMapping("")
         void create(@Valid @RequestBody Workout workout)
         {
-                wr.create(workout);
+                wr.save(workout);
         }
 
         /* PUT ---*/
@@ -61,7 +47,7 @@ public class WorkoutController {
         @PutMapping("/{id}")
         void update(@Valid @RequestBody Workout workout, @PathVariable Integer id)
         {
-                wr.update(workout, id);
+                wr.save(workout);
         }
 
         /* DELETE ---*/
@@ -69,7 +55,7 @@ public class WorkoutController {
         @DeleteMapping("/{id}")
         void delete(@PathVariable Integer id)
         {
-                wr.delete(id);
+                wr.delete(wr.findById(id).get());
         }
 
 
