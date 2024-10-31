@@ -33,7 +33,6 @@ public class PowerApplication {
 				LocalDateTime.of(2024, 10, 30, 16, 30),
 				LocalDateTime.of(2024, 10, 30, 18, 30),
 				10,
-				new ArrayList<String>(){},
 				"SportCity Houtrust",
 				Exercise.BARBELL_SQUAT
 			);

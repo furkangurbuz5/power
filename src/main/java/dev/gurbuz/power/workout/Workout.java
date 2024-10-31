@@ -14,7 +14,6 @@ public record Workout(
         LocalDateTime completedOn,
         @Positive
         Integer workoutsDone,
-        ArrayList<String> workouts,
         String location,
         Exercise mainExercise
 ) {

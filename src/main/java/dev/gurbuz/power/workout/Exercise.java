@@ -6,5 +6,6 @@ public enum Exercise {
         BARBELL_ROW,
         DEADLIFT,
         ROMANIAN_DEADLIFT,
-        BENCH_PRESS
+        BENCH_PRESS,
+        BURPEES
 }
