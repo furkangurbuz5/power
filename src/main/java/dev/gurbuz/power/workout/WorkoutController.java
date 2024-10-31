@@ -26,38 +26,52 @@ public class WorkoutController {
                 return wr.findAll();
         }
 
-//        @GetMapping("/{id}")
-//        Workout findById(@PathVariable Integer id)
-//        {
-//                Optional<Workout> workout = wr.findById(id);
-//                if(workout.isEmpty()){
-//                        throw new WorkoutNotFoundException();
-//                }
-//                return workout.get();
-//        }
-//
-//        /* POST ---*/
-//        @ResponseStatus(HttpStatus.CREATED)
-//        @PostMapping("")
-//        void create(@Valid @RequestBody Workout workout)
-//        {
-//                wr.create(workout);
-//        }
-//
-//        /* PUT ---*/
-//        @ResponseStatus(HttpStatus.NO_CONTENT)
-//        @PutMapping("/{id}")
-//        void update(@Valid @RequestBody Workout workout, @PathVariable Integer id)
-//        {
-//                wr.update(workout, id);
-//        }
-//
-//        /* DELETE ---*/
-//        @ResponseStatus(HttpStatus.ACCEPTED)
-//        @DeleteMapping("/{id}")
-//        void delete(@PathVariable Integer id)
-//        {
-//                wr.delete(id);
-//        }
+        @GetMapping("/count")
+        int count()
+        {
+                return wr.count();
+        }
+
+        @GetMapping("/location/{location}")
+        List<Workout> findByLocation(@PathVariable String location)
+        {
+                return wr.findByLocation(location);
+        }
+
+        @GetMapping("/{id}")
+        Workout findById(@PathVariable Integer id)
+        {
+                Optional<Workout> workout = wr.findById(id);
+                if(workout.isEmpty()){
+                        throw new WorkoutNotFoundException();
+                }
+                return workout.get();
+        }
+
+        /* POST ---*/
+        @ResponseStatus(HttpStatus.CREATED)
+        @PostMapping("")
+        void create(@Valid @RequestBody Workout workout)
+        {
+                wr.create(workout);
+        }
+
+        /* PUT ---*/
+        @ResponseStatus(HttpStatus.NO_CONTENT)
+        @PutMapping("/{id}")
+        void update(@Valid @RequestBody Workout workout, @PathVariable Integer id)
+        {
+                wr.update(workout, id);
+        }
+
+        /* DELETE ---*/
+        @ResponseStatus(HttpStatus.ACCEPTED)
+        @DeleteMapping("/{id}")
+        void delete(@PathVariable Integer id)
+        {
+                wr.delete(id);
+        }
+
+
 
 }
