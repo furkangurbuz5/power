@@ -1,0 +1,52 @@
+### Find All Workouts
+GET http://localhost:8080/api/workouts
+
+### Find Workout By ID
+GET http://localhost:8080/api/workouts/2
+
+### Create new Workout
+POST http://localhost:8080/api/workouts
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "Workout at SportCity Capelle a/d IJssel",
+    "startedOn": "2024-11-10T16:30:00",
+    "completedOn": "2024-11-10T18:30:00",
+    "workoutsDone": 10,
+    "workouts": ["Barbell squat","Overhead press","Barbell row"],
+    "location": "SportCity Capelle a/d IJssel",
+    "mainExercise": "BARBELL_SQUAT"
+}
+
+### Create new Workout with invalid dates (completedOn is before startedOn)
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+    "id": 11,
+    "title": "Workout at SportCity Capelle a/d IJssel",
+    "startedOn": "2024-11-10T16:30:00",
+    "completedOn": "2024-11-09T18:30:00",
+    "workoutsDone": 10,
+    "workouts": ["Barbell squat","Overhead press","Barbell row"],
+    "location": "SportCity Capelle a/d IJssel",
+    "mainExercise": "BARBELL_SQUAT"
+}
+### Update an existing Workout (Capelle a/d IJssel to Houtrust)
+PUT http://localhost:8080/api/workouts/11
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "Workout at SportCity Houtrust",
+    "startedOn": "2024-11-10T16:30:00",
+    "completedOn": "2024-11-10T18:30:00",
+    "workoutsDone": 10,
+    "workouts": ["Barbell squat","Overhead press","Barbell row"],
+    "location": "SportCity Houtrust",
+    "mainExercise": "BARBELL_SQUAT"
+}
+
+### Delete a Workout
+DELETE http://localhost:8080/api/workouts/11

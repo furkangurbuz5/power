@@ -20,8 +20,8 @@ public class PowerApplication {
 	public static void main(String[] args)
 	{
 		SpringApplication.run(PowerApplication.class, args);
-	}
 
+	}
 
 	//creating a mock Workout
 	@Bean
@@ -37,6 +37,7 @@ public class PowerApplication {
 				"SportCity Houtrust",
 				Exercise.BARBELL_SQUAT
 			);
+			logger.info(workout.toString());
 		};
 	}
 }
