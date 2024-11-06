@@ -1,17 +1,9 @@
 package dev.gurbuz.power;
 
-import dev.gurbuz.power.workout.Exercise;
-import dev.gurbuz.power.workout.Workout;
-import dev.gurbuz.power.workout.WorkoutRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 
 @SpringBootApplication
 public class PowerApplication {
@@ -39,4 +31,5 @@ public class PowerApplication {
 //			workoutRepository.create(workout);
 //		};
 //	}
+
 }
