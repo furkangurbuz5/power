@@ -39,7 +39,7 @@ public class WorkoutController {
         @PostMapping("")
         void create(@Valid @RequestBody Workout workout)
         {
-                wr.save(workout);
+                wr.create(workout);
         }
 
         /* PUT ---*/
@@ -47,7 +47,7 @@ public class WorkoutController {
         @PutMapping("/{id}")
         void update(@Valid @RequestBody Workout workout, @PathVariable Integer id)
         {
-                wr.save(workout);
+                wr.update(workout, id);
         }
 
         /* DELETE ---*/
