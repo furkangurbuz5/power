@@ -55,7 +55,7 @@ public class WorkoutController {
         @DeleteMapping("/{id}")
         void delete(@PathVariable Integer id)
         {
-                wr.delete(wr.findById(id).get());
+                wr.delete(id);
         }
 
 
