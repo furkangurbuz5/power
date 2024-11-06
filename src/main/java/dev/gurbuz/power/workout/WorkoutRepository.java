@@ -46,7 +46,7 @@ public class WorkoutRepository {
         public void create(Workout workout)
         {
                 var created = jdbcClient.sql("INSERT INTO workout(id,title,started_on,completed_on,workouts_done,location,mainexercise) values(?,?,?,?,?,?,?)")
-                        .params(List.of(workout.id(), workout.title(),workout.startedOn(),workout.completedOn(),workout.workoutsDone(),workout.location(),workout.mainExercise().toString()))
+                        .params(List.of(workout.id(), workout.title(),workout.startedOn(),workout.completedOn(),workout.workoutsDone(),workout.location()))
                         .update();
                 Assert.state(created==1,"Failed to create workout "+workout.title());
         }
@@ -54,7 +54,7 @@ public class WorkoutRepository {
         public void update(Workout workout, Integer id)
         {
                 var updated = jdbcClient.sql("UPDATE workout SET title = ?, started_on = ?, completed_on = ?, workouts_done = ?, location = ?, mainexercise=? WHERE id = ?")
-                        .params(List.of(workout.title(),workout.startedOn(),workout.completedOn(),workout.workoutsDone(),workout.location(),workout.mainExercise().toString(), id))
+                        .params(List.of(workout.title(),workout.startedOn(),workout.completedOn(),workout.workoutsDone(),workout.location(), id))
                         .update();
                 Assert.state(updated == 1, "Failed to update workout " + workout.title());
         }

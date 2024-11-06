@@ -6,8 +6,7 @@
                         "startedOn": "2024-11-01T14:00:00",
                         "completedOn": "2024-11-01T15:30:00",
                         "workoutsDone": 8,
-                        "location": "City Gym West",
-                        "mainExercise": "BENCH_PRESS"
+                        "location": "City Gym West"
                 },
                 {
                         "id": 2,
@@ -15,8 +14,7 @@
                         "startedOn": "2024-11-02T18:00:00",
                         "completedOn": "2024-11-02T19:45:00",
                         "workoutsDone": 12,
-                        "location": "Fitness 24/7",
-                        "mainExercise": "DEADLIFT"
+                        "location": "Fitness 24/7"
                 },
                 {
                         "id": 3,
@@ -24,8 +22,7 @@
                         "startedOn": "2024-11-03T08:30:00",
                         "completedOn": "2024-11-03T10:00:00",
                         "workoutsDone": 9,
-                        "location": "Downtown Fit",
-                        "mainExercise": "OVERHEAD_PRESS"
+                        "location": "Downtown Fit"
                 },
                 {
                         "id": 4,
@@ -33,8 +30,7 @@
                         "startedOn": "2024-11-04T07:00:00",
                         "completedOn": "2024-11-04T08:00:00",
                         "workoutsDone": 15,
-                        "location": "SportCity Central",
-                        "mainExercise": "BURPEES"
+                        "location": "SportCity Central"
                 },
                 {
                         "id": 5,
@@ -42,8 +38,7 @@
                         "startedOn": "2024-11-10T16:30:00",
                         "completedOn": "2024-11-10T18:30:00",
                         "workoutsDone": 10,
-                        "location": "SportCity Capelle a/d IJssel",
-                        "mainExercise": "BARBELL_SQUAT"
+                        "location": "SportCity Capelle a/d IJssel"
                 }
         ]
 }

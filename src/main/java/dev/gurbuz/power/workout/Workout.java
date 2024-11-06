@@ -14,8 +14,7 @@ public record Workout(
         LocalDateTime completedOn,
         @Positive
         Integer workoutsDone,
-        String location,
-        Exercise mainExercise
+        String location
 ) {
         public Workout{
                 if(!completedOn.isAfter(startedOn)){
