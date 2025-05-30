@@ -39,7 +39,7 @@ public class WorkoutJsonDataLoader implements CommandLineRunner {
                                 throw new RuntimeException("Failed to read JSON data.");
                         }
                 }else{
-                        logger.info("Not loading workouts from JSON data becuase the collection already contains data.");
+                        logger.info("Not loading workouts from JSON data because the collection already contains data.");
                 }
         }
 }
