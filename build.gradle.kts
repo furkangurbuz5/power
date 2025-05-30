@@ -24,9 +24,10 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.boot:spring-boot-starter-validation") //added validation dependency
 	implementation("org.springframework.boot:spring-boot-starter-jdbc") //added jdbc
-	developmentOnly("org.springframework.boot:spring-boot-docker-compose") //added docker compose
+//	developmentOnly("org.springframework.boot:spring-boot-docker-compose") //added docker compose
 	runtimeOnly("org.postgresql:postgresql") //added postgresql
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc") // added spring data
+	implementation("com.h2database:h2:2.3.232")
 }
 
 tasks.withType<Test> {
