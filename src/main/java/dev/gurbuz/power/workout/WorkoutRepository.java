@@ -72,7 +72,7 @@ public class WorkoutRepository {
 
         public void saveAll(List<Workout> workouts)
         {
-                workouts.stream().forEach(this::create); //TODO change function?
+                workouts.forEach(this::create);
         }
 
         public List<Workout> findByLocation(String location)

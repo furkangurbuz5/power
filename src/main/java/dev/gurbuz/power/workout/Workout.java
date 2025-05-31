@@ -17,9 +17,9 @@ public record Workout(
         Integer workoutsDone,
         String location
 ) {
-        public Workout{
-                if(!completedOn.isAfter(startedOn)){
-                        throw new IllegalArgumentException("completedOn must be after startedOn!");
-                }
+    public Workout {
+        if (!completedOn.isAfter(startedOn)) {
+            throw new IllegalArgumentException("completedOn must be after startedOn!");
         }
+    }
 }
